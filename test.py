@@ -59,21 +59,21 @@
 # 실관람객 평점은 {str(실관람객평점)}, 네티즌 평점은 {str(네티즌평점)}, 
 # 순위는 {순위}, 누적관객수는 {누적관객수} 이다.""")
 
-# 실습2
-name, birth, age, MBTI = '조민규', '2001.08.28', 25, 'intj'
-hometown, hobby_1, f_food, h_food = '포항', '잠자기', '초밥', '토마토'
-f_color, f_music , f_movie = '파란색', '클래식', '스파이더 맨'
-motto, hobby_2 ,i_type, f_sub = '그럴수 있지', '게임', '귀여운', '과학'
-h_sub, major, h_type = '국어', '전자공학과', '입이 거친'
-applicate = '''제조업 R&D 분야 직무로 가고싶어 이 부트캠프에 참여하여 열심히 참여하면 
-남들 보다 조금이나마 유리한 환경에서 시작할 수 있다고 생각하여 지원'''
-agenda = '''제발 잠깐이라도 여유를 줬으면 합니다....'''
+# # 실습2
+# name, birth, age, MBTI = '조민규', '2001.08.28', 25, 'intj'
+# hometown, hobby_1, f_food, h_food = '포항', '잠자기', '초밥', '토마토'
+# f_color, f_music , f_movie = '파란색', '클래식', '스파이더 맨'
+# motto, hobby_2 ,i_type, f_sub = '그럴수 있지', '게임', '귀여운', '과학'
+# h_sub, major, h_type = '국어', '전자공학과', '입이 거친'
+# applicate = '''제조업 R&D 분야 직무로 가고싶어 이 부트캠프에 참여하여 열심히 참여하면 
+# 남들 보다 조금이나마 유리한 환경에서 시작할 수 있다고 생각하여 지원'''
+# agenda = '''제발 잠깐이라도 여유를 줬으면 합니다....'''
 
-print(f'''안녕하세요 저의 이름은 {name}입니다. 
-{hometown}에서 {birth}에 태어나 현재 {str(age)}살 이고 {major}전공 졸업 예정입니다. 
-저의 MBTI는 {MBTI}이고 취미는 {hobby_1}과 {hobby_2}입니다.
-{f_sub}을 좋아하고 {h_sub}을 싫어하여 {major}에 진학하였으며 좋아하는 음식은 {f_food}이고 싫어하는 음식은 {h_food}입니다.
-좋아하는 색은 {f_color}, 좋아하는 음악 장르는 {f_music}, 가장 좋아하는 영화는 {f_movie}입니다.
-저의 삶의 마인드는 {motto}이고 싫어하는 사람의 유형은 {h_type}이고 이상형은 {i_type}입니다.
-지원목적은 {applicate}하였고 마지막으로 하고싶은 말은 {agenda}
-''')
+# print(f'''안녕하세요 저의 이름은 {name}입니다. 
+# {hometown}에서 {birth}에 태어나 현재 {str(age)}살 이고 {major}전공 졸업 예정입니다. 
+# 저의 MBTI는 {MBTI}이고 취미는 {hobby_1}과 {hobby_2}입니다.
+# {f_sub}을 좋아하고 {h_sub}을 싫어하여 {major}에 진학하였으며 좋아하는 음식은 {f_food}이고 싫어하는 음식은 {h_food}입니다.
+# 좋아하는 색은 {f_color}, 좋아하는 음악 장르는 {f_music}, 가장 좋아하는 영화는 {f_movie}입니다.
+# 저의 삶의 마인드는 {motto}이고 싫어하는 사람의 유형은 {h_type}이고 이상형은 {i_type}입니다.
+# 지원목적은 {applicate}하였고 마지막으로 하고싶은 말은 {agenda}
+# ''')

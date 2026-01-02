@@ -125,9 +125,11 @@
 # nums = [100,200,300,400,500,600,700]
 # print(nums[int(len(nums)/2)-1:int(len(nums)/2)+2], "실습1-2")
 
-nums = [1,2,3,4,5]
-nums[:] = nums[:] * 2
-print(nums, "실습1-3")
+# nums = [1,2,3,4,5]
+# num = []
+# for i in nums:
+#     num.append(i*2)
+# print(num, "실습1-3")
 
 # items = ["a","b","c","d","e"]
 # print(items[::-1], "실습1-4")
@@ -155,5 +157,32 @@ print(nums, "실습1-3")
 # del letters[int(len(letters)/2)-1]
 # print(letters, "실습2-2")
 
-# 실습3
+# # 실습3
+# data = list() 
+# data.append(int(input('1일차:')))
+# data.append(int(input('2일차:')))
+# data.append(int(input('3일차:')))
+# data.append(int(input('4일차:')))
+# data.append(int(input('5일차:')))
+# data.append(int(input('6일차:')))
+# data.append(int(input('7일차:')))
+# data.append(int(input('8일차:')))
+# data.append(int(input('9일차:')))
+# data.append(int(input('10일차:')))
 
+# data.insert(0,3000)
+# data.append(5000)
+# data.remove(0)
+
+# data_copy = list(data)
+# del data_copy[0]
+# del data_copy[-1]
+
+# print(f"""처음 5일:{data[:int(len(data)/2)]} 
+# 마지막 5일:{data[int(len(data)/2)+1:]}
+# 총 소비:{sum(data)}
+# 전체 평균:{sum(data)/len(data)}
+# 처음 5일 평균:{sum(data[:int(len(data)/2)])/len(data[:int(len(data)/2)])}
+# 마지막 5일 평균:{sum(data[int(len(data)/2)+1:])/len(data[int(len(data)/2)+1:])}
+# 수정된 리스트:{data_copy}
+# 원본 리스트:{data}""")

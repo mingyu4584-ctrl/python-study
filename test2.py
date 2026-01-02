@@ -87,3 +87,4 @@
 # my_certificates = {'SQL','Python','Linux'}
 # job_require = {'SQL','Python'}
 # print(f"지원 자격 충족 여부: {job_require.issubset(my_certificates)}", "step3")
+aa = 1

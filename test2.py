@@ -87,4 +87,99 @@
 # my_certificates = {'SQL','Python','Linux'}
 # job_require = {'SQL','Python'}
 # print(f"지원 자격 충족 여부: {job_require.issubset(my_certificates)}", "step3")
-aa = 1
+
+# # dict
+# # 첫번째 방법
+# person = {
+#     "name": 'Alice',
+#     "age": 25
+# }
+# print(person["name"])
+# # 두 번째 방법
+# person = dict(name="Alice", age=25)
+# print(person["name"])
+# # 키로 정수 사용
+# num_dict = {1: 'one', 2:'two'}
+# print(num_dict[1])
+# # 키로 튜플 사용
+# coord_dict = {(0,0):"origin",(1,2):"point A"}
+# print(coord_dict[(1,2)])
+# # 키로 리스트 사용 x
+# my_dict = {
+#     [1,2,3]:"value" # 리스트는 병경이 가능한 객체이므로 사용 불가
+# }
+# product = dict(name = "keyboard", price = 30000, in_stock = True)
+# pairs = [('name','Bob'),("age",22),("city","Busan")]
+# person = dict(pairs)
+
+# keys = ["name","age","city"]
+# values = ["charlie",28,"Incheon"]
+
+# info = dict(zip(keys,values))
+# # {'name': 'charlie', 'age': 28, 'city': 'Incheon'}
+# print(info)
+
+# person = {
+#     'name':'Alice',
+#     'age': 30,
+#     'city': 'Seoul'
+# }
+
+# # 데이터 접근 첫 번째 방법
+# print(person['name']) # Alice
+# print(person['email']) # KeyError: 'email'
+
+# # 데이터 접근 두 번째 방법
+# print(person.get('name')) # Alice
+# print(person.get('email')) # None : 출력 오류가 아님
+# print(person.get('eamil', "없음") # 없음
+
+# user_data = {
+#     "username":'student01',
+#     "email": "sudent@example.com"
+# }
+# # 사용자가 요청한 키
+# key = input("확인할 정보를 입력하세요 (username,email,phone)")
+# # 안전하게 접근
+# value = user_data.get(key, "해당 정보 없음")
+# print(value)
+# user = {
+#     'name': '덕배',
+#     'age': 15
+# }
+# user['name'] = '춘식' # 있으면 수정
+# print(user['name'])
+# user['email'] = 'example@gmail.com' # 없으면 추가됨
+# print(user)
+
+# person = {
+#     "name": "Alice",
+#     "age": 25,
+#     "city": "Busan"
+# }
+# person.update({"age":26,"city":"Seoul"}) # 업데이트 및 수정 가능
+# print(person)
+# person.update({'job':"student"}) # 하나씩도 가능
+# print(person)
+# person.update(age=26,hobby="game") # 키워드로 가능
+# print(person)
+# del person["age"]   # {'name': 'Alice'}
+# del person["email"] # KeyError: 'email'
+# print(person)
+# age = person.pop("age")
+# print(age)
+# print(person)
+# last_item = person.popitem()
+# print(last_item)
+# print(person)
+# person.clear()
+# print(person)
+# print(person.keys()) # dict_keys(['name', 'age', 'city'])
+# key_list = list(person.keys()) # 리스트로 변환
+# print(key_list)
+# print(person.values()) # dict_values(['Alice', 25, 'Busan'])
+# value_list = list(person.values()) # 리스트로 변환
+# print(value_list)
+# print(person.items())   # dict_items([('name', 'Alice'), ('age', 25), ('city', 'Busan')])
+# item_list = list(person.items()) # 리스트로 변환
+# print(item_list)

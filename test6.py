@@ -101,50 +101,50 @@
 # 기능을 그대로 쓰거나 확장 하는 것
 
 
-class Speaker:  # 부모 클래스 (기본 기능)
-    def __init__(self):
-        self.__volume = 5   # private 변수 외부 접근 차단
+# class Speaker:  # 부모 클래스 (기본 기능)
+#     def __init__(self):
+#         self.__volume = 5   # private 변수 외부 접근 차단
     
-    @property   # getter 역할 함 sp.volume으로 읽기 가능
-    def volume(self):   # 값 읽기 전용
-        return self.__volume    # private 값 반환
+#     @property   # getter 역할 함 sp.volume으로 읽기 가능
+#     def volume(self):   # 값 읽기 전용
+#         return self.__volume    # private 값 반환
     
-    @volume.setter  # setter 역할 함 sp.volume = 값 형태 가능
-    def volume(self, value):    # setter (값 설정 담당)
-        if 0 <= value <= 10:    # 값을 검증
-            self.__volume = value   # 검증 통과한 값만 저장
-            # print(self.get_volume())
-        else:
-            print("볼륨은 0~10 사이만 가능 합니다.")
+#     @volume.setter  # setter 역할 함 sp.volume = 값 형태 가능
+#     def volume(self, value):    # setter (값 설정 담당)
+#         if 0 <= value <= 10:    # 값을 검증
+#             self.__volume = value   # 검증 통과한 값만 저장
+#             # print(self.get_volume())
+#         else:
+#             print("볼륨은 0~10 사이만 가능 합니다.")
     
-    def play_sound(self):   # 모든 스피커가 공통으로 가지는 기능
-        print("소리를 재생 합니다.")
+#     def play_sound(self):   # 모든 스피커가 공통으로 가지는 기능
+#         print("소리를 재생 합니다.")
 
-# 오버라이딩
-# 부모 메서드를
-# 자식 클래스에서 다시 만드는 것
+# # 오버라이딩
+# # 부모 메서드를
+# # 자식 클래스에서 다시 만드는 것
 
-class SmartSpeaker(Speaker): # 이 한 줄이 상속 Speaker 기능 전부 물려받음
+# class SmartSpeaker(Speaker): # 이 한 줄이 상속 Speaker 기능 전부 물려받음
 
-    def __init__(self,x,y):
-        super().__init__(x)
-        self.y = y
+#     def __init__(self,x,y):
+#         super().__init__(x)
+#         self.y = y
 
-    def play_sound(self):   # 부모의 play_sound를 덮어씀
-        super().play_sound()    # 부모 클래스 메서등 호출
-        print("AI가 추천한 음악을 재생합니다.") # 자신만의 동작
+#     def play_sound(self):   # 부모의 play_sound를 덮어씀
+#         super().play_sound()    # 부모 클래스 메서등 호출
+#         print("AI가 추천한 음악을 재생합니다.") # 자신만의 동작
 
+# # smart = SmartSpeaker()
+# # smart.play_sound()
+# # print(smart.volume)
+
+# # normal = Speaker()
 # smart = SmartSpeaker()
+
+# # normal.play_sound()
 # smart.play_sound()
-# print(smart.volume)
-
-# normal = Speaker()
-smart = SmartSpeaker()
-
-# normal.play_sound()
-smart.play_sound()
-# 같은 메서드
-# 객체에 따른 다른 동작
+# # 같은 메서드
+# # 객체에 따른 다른 동작
 
 
 
